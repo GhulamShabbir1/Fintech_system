@@ -15,11 +15,17 @@ import 'animate.css'
 
 const app = createApp(App)
 
-app.use(createPinia())
+const pinia = createPinia()
+app.use(pinia)
 app.use(router)
 app.use(Quasar, {
   plugins: { Dialog, Notify, Loading, Dark }, // you can add more plugins
   lang: quasarLang
 })
+
+// Bootstrap auth token on app start
+import { useAuthStore } from './stores/auth'
+const auth = useAuthStore()
+auth.loadToken()
 
 app.mount('#app')

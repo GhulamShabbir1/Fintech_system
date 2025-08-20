@@ -1,0 +1,31 @@
+<template>
+  <q-layout view="hHh lpR fFf">
+    <q-header elevated class="bg-primary text-white">
+      <q-toolbar>
+        <q-toolbar-title class="row items-center no-wrap">
+          <q-icon name="payments" class="q-mr-sm" />
+          <span>Fintech System</span>
+        </q-toolbar-title>
+        <q-space />
+        <q-btn flat dense icon="home" @click="$router.push('/')" />
+        <q-btn flat dense icon="login" @click="$router.push('/login')" />
+        <q-btn flat dense icon="person_add" @click="$router.push('/register')" />
+      </q-toolbar>
+    </q-header>
+
+    <q-page-container>
+      <router-view />
+    </q-page-container>
+
+    <q-footer class="bg-grey-1 text-grey-8">
+      <div class="q-pa-sm text-center">© {{ new Date().getFullYear() }} Fintech System</div>
+    </q-footer>
+  </q-layout>
+</template>
+
+<script setup>
+</script>
+
+<style scoped>
+</style>
+
