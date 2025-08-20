@@ -9,5 +9,13 @@ export default defineConfig({
         additionalData: `@import "quasar/src/css/index.sass"`
       }
     }
+  },
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3000',
+        changeOrigin: true
+      }
+    }
   }
 })
