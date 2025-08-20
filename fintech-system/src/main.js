@@ -26,7 +26,7 @@ app.use(Quasar, {
 })
 
 // Bootstrap auth token on app start
-import { useAuthStore } from './stores/auth'
+import { useAuthStore } from './store/auth'
 const auth = useAuthStore()
 auth.loadToken()
 

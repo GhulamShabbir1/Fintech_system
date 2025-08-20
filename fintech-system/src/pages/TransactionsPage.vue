@@ -14,7 +14,7 @@
 import { ref } from 'vue'
 import TransactionTable from '../components/transactions/TransactionTable.vue'
 import TransactionDetailModal from '../components/transactions/TransactionDetailModal.vue'
-import api from '../plugins/axios'
+import api from '../boot/axios'
 
 const show = ref(false)
 const selected = ref(null)

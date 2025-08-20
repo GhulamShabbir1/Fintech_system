@@ -23,7 +23,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
-import api from '../plugins/axios'
+import api from '../boot/axios'
 import CheckoutForm from '../components/payments/CheckoutForm.vue'
 
 const route = useRoute()

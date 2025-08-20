@@ -14,7 +14,7 @@
 
 <script setup>
 import { ref, watch, toRefs } from 'vue'
-import api from '../../plugins/axios'
+import api from '../../boot/axios'
 import RevenueChart from './charts/RevenueChart.vue'
 import MethodsDistributionCharts from './charts/MethodsDistributionCharts.vue'
 import TransactionTrendsChart from './charts/TransactionTrendsChart.vue'

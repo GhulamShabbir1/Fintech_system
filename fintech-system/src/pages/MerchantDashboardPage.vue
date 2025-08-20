@@ -35,7 +35,7 @@
 
 <script setup>
 import { computed, onMounted } from 'vue'
-import { useMerchantStore } from '../stores/merchant'
+import { useMerchantStore } from '../store/merchant'
 import MerchantProfileForm from '../components/merchants/MerchantProfileForm.vue'
 
 const store = useMerchantStore()

@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import api from '../plugins/axios'
+import api from '../boot/axios'
 
 export const useMerchantStore = defineStore('merchant', {
   state: () => ({

@@ -39,7 +39,7 @@
 
 <script setup>
 import { ref, watchEffect } from 'vue'
-import api from '../../plugins/axios'
+import api from '../../boot/axios'
 import RefundButton from './RefundButton.vue'
 
 const rows = ref([])

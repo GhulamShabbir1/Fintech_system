@@ -5,7 +5,7 @@
 <script setup>
 import { ref } from 'vue'
 import { Dialog, Notify } from 'quasar'
-import api from '../../plugins/axios'
+import api from '../../boot/axios'
 
 const props = defineProps({ transaction: { type: Object, required: true } })
 const loading = ref(false)

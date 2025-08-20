@@ -37,7 +37,7 @@
 <script setup>
 import { ref } from 'vue'
 import { Notify } from 'quasar'
-import { useMerchantStore } from '../../stores/merchant'
+import { useMerchantStore } from '../../store/merchant'
 
 const step = ref(1)
 const submitting = ref(false)

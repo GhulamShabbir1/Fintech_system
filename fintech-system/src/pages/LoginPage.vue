@@ -20,8 +20,8 @@
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { Notify } from 'quasar'
-import api from '../plugins/axios'
-import { useAuthStore } from '../stores/auth'
+import api from '../boot/axios'
+import { useAuthStore } from '../store/auth'
 
 const router = useRouter()
 const auth = useAuthStore()

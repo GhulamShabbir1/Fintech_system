@@ -24,7 +24,7 @@
 <script setup>
 import { ref, watchEffect } from 'vue'
 import { Notify } from 'quasar'
-import { useMerchantStore } from '../../stores/merchant'
+import { useMerchantStore } from '../../store/merchant'
 
 const store = useMerchantStore()
 const profile = ref({})
