@@ -3,7 +3,7 @@ import { Notify } from 'quasar'
 import { useAuthStore } from '../stores/auth'
 
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: import.meta.env.VITE_API_BASE_URL || '/api',
   timeout: 20000
 })
 
