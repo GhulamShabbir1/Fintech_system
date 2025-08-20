@@ -7,7 +7,7 @@
       <q-form @submit.prevent="login" class="q-gutter-md">
         <q-input v-model="email" type="email" label="Email" dense outlined required />
         <q-input v-model="password" type="password" label="Password" dense outlined required />
-        <q-btn type="submit" color="primary" label="Login" class="full-width" :loading="loading" />
+        <q-btn type="submit" label="Login" class="full-width btn-gradient" :loading="loading" />
       </q-form>
       <q-card-actions align="center">
         <q-btn flat label="Create account" @click="$router.push('/register')" />

@@ -11,7 +11,7 @@
       </div>
     </div>
     <PaymentMethodSelector v-model="method" />
-    <q-btn type="submit" color="primary" label="Pay" :loading="loading" />
+    <q-btn type="submit" label="Pay" :loading="loading" class="btn-gradient" />
   </q-form>
 </template>
 

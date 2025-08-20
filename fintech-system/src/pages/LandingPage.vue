@@ -13,8 +13,8 @@
           </div>
 
           <div class="q-mt-lg row q-gutter-sm">
-            <q-btn color="primary" label="Get Started" @click="goToRegister" />
-            <q-btn color="secondary" outline label="Login" @click="goToLogin" />
+            <q-btn label="Get Started" @click="goToRegister" class="btn-gradient" />
+            <q-btn outline label="Login" @click="goToLogin" class="btn-outline-light" />
           </div>
         </div>
 

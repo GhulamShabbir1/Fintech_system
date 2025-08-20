@@ -3,7 +3,7 @@
     <div class="row items-center q-mb-md">
       <div class="text-h6">Transactions</div>
       <q-space />
-      <q-btn color="primary" outline label="Export CSV" @click="exportCsv" />
+      <q-btn outline label="Export CSV" @click="exportCsv" class="btn-outline-light" />
     </div>
     <TransactionTable @view="open" />
     <TransactionDetailModal v-model="show" :tx="selected" />

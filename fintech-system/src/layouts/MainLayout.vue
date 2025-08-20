@@ -17,7 +17,9 @@
     </q-header>
 
     <q-page-container>
-      <router-view />
+      <transition name="fade-slide" mode="out-in">
+        <router-view />
+      </transition>
     </q-page-container>
 
     <q-footer class="bg-grey-1 text-grey-8">

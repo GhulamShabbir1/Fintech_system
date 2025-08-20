@@ -26,8 +26,8 @@
 
       <template #navigation>
         <q-stepper-navigation>
-          <q-btn @click="next" color="primary" :label="step < 4 ? 'Next' : 'Submit'" :loading="submitting" />
-          <q-btn v-if="step > 1" flat color="primary" @click="prev" label="Back" class="q-ml-sm" />
+          <q-btn @click="next" :label="step < 4 ? 'Next' : 'Submit'" :loading="submitting" class="btn-gradient" />
+          <q-btn v-if="step > 1" flat @click="prev" label="Back" class="q-ml-sm btn-outline-light" />
         </q-stepper-navigation>
       </template>
     </q-stepper>
