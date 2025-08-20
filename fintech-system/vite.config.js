@@ -3,13 +3,7 @@ import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
   plugins: [vue()],
-  css: {
-    preprocessorOptions: {
-      sass: {
-        additionalData: `@import "quasar/src/css/index.sass"`
-      }
-    }
-  },
+  css: {},
   server: {
     proxy: {
       '/api': {
