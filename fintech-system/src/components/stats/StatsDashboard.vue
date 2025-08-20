@@ -13,7 +13,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, watch, toRefs } from 'vue'
 import api from '../../plugins/axios'
 import RevenueChart from './charts/RevenueChart.vue'
 import MethodsDistributionCharts from './charts/MethodsDistributionCharts.vue'
@@ -23,16 +23,22 @@ const revenue = ref([])
 const methods = ref([])
 const trends = ref([])
 
-onMounted(async () => {
+const props = defineProps({ filters: { type: Object, default: () => ({}) } })
+const { filters } = toRefs(props)
+
+const fetchAll = async () => {
+  const params = { startDate: filters.value.startDate, endDate: filters.value.endDate, merchantId: filters.value.merchantId }
   const [r, m, t] = await Promise.all([
-    api.get('/stats/revenue'),
-    api.get('/stats/methods'),
-    api.get('/stats/transactions')
+    api.get('/stats/revenue', { params }),
+    api.get('/stats/methods', { params }),
+    api.get('/stats/transactions', { params })
   ])
   revenue.value = r.data
   methods.value = m.data
   trends.value = t.data
-})
+}
+
+watch(filters, fetchAll, { deep: true, immediate: true })
 </script>
 
 <style scoped>

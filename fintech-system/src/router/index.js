@@ -8,6 +8,8 @@ import Checkout from '../pages/CheckoutPage.vue'
 import MerchantDashboard from '../pages/MerchantDashboardPage.vue'
 import PaymentStatus from '../pages/PaymentStatus.vue'
 import HostedCheckout from '../pages/HostedCheckout.vue'
+import TransactionsPage from '../pages/TransactionsPage.vue'
+import StatsPage from '../pages/StatsPage.vue'
 
 const routes = [
   { path: '/', component: LandingPage },
@@ -17,6 +19,8 @@ const routes = [
   { path: '/dashboard', component: MerchantDashboard },
   { path: '/payments/status/:id', component: PaymentStatus },
   { path: '/checkout/:merchantId', component: HostedCheckout },
+  { path: '/transactions', component: TransactionsPage },
+  { path: '/stats', component: StatsPage },
 ]
 
 const router = createRouter({
