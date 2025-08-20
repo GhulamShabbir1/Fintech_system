@@ -77,3 +77,41 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* ---- Fintech theme utilities ---- */
+:root {
+  --brand-primary: #3b82f6;
+  --brand-secondary: #10b981;
+  --brand-accent: #f59e0b;
+  --brand-bg: #0b1020;
+}
+
+.header-gradient {
+  background: linear-gradient(90deg, #0b1020 0%, #11224f 60%, #1a3b8b 100%);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+}
+
+.elevated-hover:hover {
+  transform: translateY(-2px);
+  transition: transform .15s ease;
+}
+
+.pulse-loader {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--brand-secondary);
+  animation: pulse 1.2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: .6 }
+  50% { transform: scale(1.6); opacity: 1 }
+}

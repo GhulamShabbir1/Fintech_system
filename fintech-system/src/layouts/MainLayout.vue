@@ -1,6 +1,6 @@
 <template>
   <q-layout view="hHh lpR fFf">
-    <q-header elevated class="bg-primary text-white">
+    <q-header elevated class="text-white header-gradient">
       <q-toolbar>
         <q-toolbar-title class="row items-center no-wrap">
           <q-icon name="payments" class="q-mr-sm" />
@@ -8,6 +8,8 @@
         </q-toolbar-title>
         <q-space />
         <q-btn flat dense icon="home" @click="$router.push('/')" />
+        <q-btn flat dense icon="stacked_bar_chart" @click="$router.push('/stats')" />
+        <q-btn flat dense icon="receipt_long" @click="$router.push('/transactions')" />
         <q-btn flat dense icon="login" @click="$router.push('/login')" />
         <q-btn flat dense icon="person_add" @click="$router.push('/register')" />
       </q-toolbar>
