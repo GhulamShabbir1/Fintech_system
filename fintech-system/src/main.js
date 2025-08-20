@@ -4,7 +4,7 @@ import App from './App.vue'
 import router from './router'
 
 // Import Quasar
-import { Quasar, Dialog, Notify, Loading, Dark } from 'quasar'
+import { Quasar, Dialog, Notify, Loading, Dark, setCssVar } from 'quasar'
 import quasarLang from 'quasar/lang/en-US'
 import quasarIconSet from 'quasar/icon-set/material-icons'
 import '@quasar/extras/material-icons/material-icons.css'
@@ -29,5 +29,11 @@ app.use(Quasar, {
 import { useAuthStore } from './store/auth'
 const auth = useAuthStore()
 auth.loadToken()
+
+// Set brand colors (align with fintech theme)
+setCssVar('primary', '#3b82f6')
+setCssVar('secondary', '#10b981')
+setCssVar('accent', '#f59e0b')
+setCssVar('dark', '#0b1020')
 
 app.mount('#app')

@@ -1,5 +1,6 @@
 <template>
   <q-layout view="hHh lpR fFf">
+    <AnimateBackground />
     <q-header elevated class="text-white header-gradient">
       <q-toolbar>
         <q-toolbar-title class="row items-center no-wrap">
@@ -26,6 +27,7 @@
 </template>
 
 <script setup>
+import AnimateBackground from '../components/common/AnimateBackground.vue'
 </script>
 
 <style scoped>

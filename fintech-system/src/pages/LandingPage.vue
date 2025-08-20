@@ -3,7 +3,7 @@
     <div class="q-mx-auto" style="max-width: 1100px;">
       <div class="row items-center q-col-gutter-xl">
         <div class="col-12 col-md-6">
-          <q-banner dense class="bg-primary text-white q-pa-md rounded-borders animate__animated animate__fadeIn">
+          <q-banner dense class="text-white q-pa-md rounded-borders animate__animated animate__fadeIn header-gradient">
             <div class="text-h4 q-mb-xs">Fintech System</div>
             <div class="text-subtitle1">Modern payments and merchant tools</div>
           </q-banner>
@@ -21,7 +21,7 @@
         <div class="col-12 col-md-6">
           <div class="row q-col-gutter-md">
             <div class="col-12 col-sm-6" v-for="card in cards" :key="card.title">
-              <q-card class="q-pa-md animate__animated animate__zoomIn" :class="card.color">
+              <q-card class="q-pa-md animate__animated animate__zoomIn glass-card elevated-hover" :class="card.color">
                 <div class="row items-center">
                   <q-icon :name="card.icon" size="md" class="q-mr-sm" />
                   <div class="text-subtitle1 text-weight-medium">{{ card.title }}</div>

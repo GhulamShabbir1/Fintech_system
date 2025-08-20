@@ -1,6 +1,6 @@
 <template>
   <q-page class="q-pa-md flex flex-center">
-    <q-card class="q-pa-lg" style="width:420px; max-width:95%;">
+    <q-card class="q-pa-lg glass-card elevated-hover" style="width:420px; max-width:95%;">
       <q-card-section>
         <div class="text-h6 text-center">Merchant Login</div>
       </q-card-section>
