@@ -1,7 +1,7 @@
 <template>
   <q-page class="q-pa-md">
     <div class="q-mx-auto" style="max-width: 500px;">
-      <q-card>
+      <q-card class="glass-card elevated-hover">
         <q-card-section>
           <div class="text-h6">Checkout</div>
         </q-card-section>

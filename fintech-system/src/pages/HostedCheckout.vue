@@ -1,7 +1,7 @@
 <template>
   <q-page class="q-pa-md">
     <div class="q-mx-auto" style="max-width: 520px;">
-      <q-card>
+      <q-card class="glass-card elevated-hover">
         <q-card-section class="row items-center">
           <q-avatar square size="42px" class="q-mr-sm">
             <img :src="branding.logo_url || 'https://via.placeholder.com/80x80'" />

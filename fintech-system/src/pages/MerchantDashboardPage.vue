@@ -8,12 +8,12 @@
       </q-chip>
     </div>
 
-    <q-card class="q-pa-md q-mb-lg">
+    <q-card class="q-pa-md q-mb-lg glass-card elevated-hover">
       <div class="text-subtitle1 q-mb-md">Profile</div>
       <MerchantProfileForm />
     </q-card>
 
-    <q-card class="q-pa-md">
+    <q-card class="q-pa-md glass-card elevated-hover">
       <div class="text-subtitle1 q-mb-sm">Quick Stats</div>
       <div class="row text-center">
         <div class="col">

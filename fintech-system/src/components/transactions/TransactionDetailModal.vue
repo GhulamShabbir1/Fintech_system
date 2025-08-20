@@ -1,6 +1,6 @@
 <template>
   <q-dialog v-model="modelValueLocal">
-    <q-card style="max-width:600px; width: 95vw;">
+    <q-card class="glass-card" style="max-width:600px; width: 95vw;">
       <q-card-section class="text-h6">Transaction Details</q-card-section>
       <q-separator />
       <q-card-section>
